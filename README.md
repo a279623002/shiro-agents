@@ -37,4 +37,24 @@
         # 或者
         pip install tensorflow
         ```
-
+* tavily
+  1. AI搜索API客户端
+  2. 官网：https://www.tavily.com/
+  3. 安装依赖库
+    ```
+    pip install tavily
+    ```
+* openai
+  1. 用于调用GPT等大语言模型
+  2. 安装依赖库
+    ```
+    pip install openai
+    ```
+* ModelScope
+  > https://modelscope.cn/docs/model-service/API-Inference/intro
+* requests
+  1. 用于发送HTTP请求
+  2. 安装依赖库
+    ```
+    pip install requests
+    ```
