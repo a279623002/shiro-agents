@@ -1,2 +1,4 @@
 conf.yaml
 .env
+**/__pycache__/
+**/memory_data/
