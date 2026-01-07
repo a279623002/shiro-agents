@@ -36,6 +36,8 @@
         conda install numpy pandas matplotlib
         # 或者
         pip install tensorflow
+        # 临时更改镜像
+        pip install SomePackage -i https://mirrors.aliyun.com/pypi/simple/
         ```
 * tavily
   1. AI搜索API客户端
