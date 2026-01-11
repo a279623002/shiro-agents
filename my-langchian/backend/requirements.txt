@@ -1,0 +1,11 @@
+# Core dependencies
+langchain==0.1.0
+langchain-openai==0.0.2
+fastapi==0.104.1
+uvicorn==0.24.0
+python-dotenv==1.0.0
+pydantic==2.5.2
+
+# Additional tools (for agents)
+numpy==1.26.4
+scipy==1.12.0

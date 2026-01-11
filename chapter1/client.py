@@ -27,3 +27,10 @@ class OpenAICompatibleClient:
         except Exception as e:
             print(f"调用LLM API时发生错误: {e}")
             return "错误:调用语言模型服务时出错。"
+
+client = OpenAICompatibleClient(
+    model="gpt-3.5-turbo",
+    api_key="sk-",
+    base_url="https://api.openai-proxy.com/v1"
+)
+print("你好", "你是一个专业的助手")    

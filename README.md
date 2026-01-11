@@ -60,3 +60,15 @@
     ```
     pip install requests
     ```
+* vllm
+  1. 用于部署和运行大语言模型
+  2. 安装依赖库
+    ```
+    pip install vllm
+    python -m vllm.entrypoints.openai.api_server \
+    --model /Users/shiro/.cache/modelscope/hub/models/Qwen/Qwen1.5-0.5B-Chat \
+    --trust-remote-code \
+    --host 0.0.0.0 \
+    --port 8000 \
+    --served-model-name qwen1.5-0.5b-chat
+    ```     
