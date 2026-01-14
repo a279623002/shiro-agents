@@ -1,0 +1,6 @@
+LLM:
+  MODEL: 
+  API_KEY: 
+  BASE_URL: 
+TAVILY:
+  TAVILY_API_KEY: 

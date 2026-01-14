@@ -36,6 +36,8 @@
         conda install numpy pandas matplotlib
         # 或者
         pip install tensorflow
+        # 临时更改镜像
+        pip install SomePackage -i https://mirrors.aliyun.com/pypi/simple/
         ```
 * tavily
   1. AI搜索API客户端
@@ -58,3 +60,19 @@
     ```
     pip install requests
     ```
+* vllm
+  1. 用于部署和运行大语言模型
+  2. 安装依赖库
+    ```
+    pip install pydantic==1.10.13
+    pip install vllm
+
+
+
+    python -m vllm.entrypoints.openai.api_server \
+    --model /Users/shiro/.cache/modelscope/hub/models/Qwen/Qwen1.5-0.5B-Chat \
+    --trust-remote-code \
+    --host 0.0.0.0 \
+    --port 8001 \ 
+    --served-model-name qwen1.5-0.5b-chat
+    ```     
