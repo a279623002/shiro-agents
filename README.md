@@ -76,3 +76,102 @@
     --port 8001 \ 
     --served-model-name qwen1.5-0.5b-chat
     ```     
+## git 命令
+* 查看当前状态（可查看当前所在分支和修改添加后的文件）
+  ```sh
+  git status
+  ```
+* 提交所有文件
+  ```sh
+  git add .
+  ```
+* 提交文件到本地暂存区
+  ```sh
+  git commit -m "提交信息"
+  ```
+* 推送到仓库
+  ```sh
+  git push origin main
+  ```
+## Linux 命令
+* 查看当前目录
+  ```sh
+  pwd
+  ```
+* 查看当前目录下的文件
+  ```sh
+  ls
+  ```
+* 查看当前目录下的文件（包含隐藏文件）
+  ```sh
+  ls -a
+  ```
+* 切换目录
+  ```sh
+  cd 目录名
+  ```
+* 切换到上一级目录
+  ```sh
+  cd ..
+  ```
+* 切换到根目录
+  ```sh
+  cd /
+  ``` 
+* 切换到当前用户的主目录
+  ```sh
+  cd ~
+  ```
+* 查看当前用户
+  ```sh
+  whoami
+  ```
+## vim 编辑器
+* 打开文件
+  ```sh
+  vim 文件名
+  ```
+* 进入插入模式
+  ```sh
+  i
+  ```
+* 退出插入模式
+  ```sh
+  Esc
+  ```
+* 保存并退出
+  ```sh
+  :wq
+  ```
+* 仅退出不保存
+  ```sh
+  :q!
+  ```
+## conda 命令
+* 查看当前环境
+  ```sh
+  conda env list
+  ```
+* 激活环境
+  ```sh
+  conda activate 环境名
+  ```
+* 退出环境
+  ```sh
+  conda deactivate
+  ```
+* 创建环境
+  ```sh
+  conda create -n 环境名 python=3.11
+  ```
+* 删除环境
+  ```sh
+  conda env remove -n 环境名
+  ```
+* pip 安装依赖库
+  ```sh
+  pip install 依赖库名 -i https://mirrors.aliyun.com/pypi/simple/
+  ```
+
+
+
