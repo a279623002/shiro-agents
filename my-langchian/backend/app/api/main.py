@@ -1,9 +1,16 @@
 from fastapi import FastAPI, HTTPException
-from ..config import config
-from ..models.schemas import LLMRequest, LLMResponse
-from ..service.llm_service import llm_service
+from fastapi.responses import RedirectResponse
+from app.config import config
+from app.models.schemas import LLMRequest, LLMResponse
+from app.service.llm_service import llm_service
+from app.api.routes.map import router as map_routes
+
+
 
 app = FastAPI(title="LangChain Local LLM API", description="API for calling local LLM model using LangChain")
+
+
+app.include_router(map_routes, prefix="/api")
 
 @app.post("/api/llm", response_model=LLMResponse)
 async def call_llm(request: LLMRequest):
@@ -25,3 +32,8 @@ async def call_llm(request: LLMRequest):
 async def root():
     """Root endpoint for health check."""
     return {"message": "LangChain Local LLM API is running"}
+
+@app.get("/docs")
+async def redirect_to_docs():
+    """Redirect to Swagger UI documentation."""
+    return RedirectResponse(url="/docs")
