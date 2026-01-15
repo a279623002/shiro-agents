@@ -64,7 +64,7 @@
   1. 用于部署和运行大语言模型
   2. 安装依赖库
     ```
-    # conda qwen2_5
+    # conda activate qwen2.5
     pip install pydantic==1.10.13
     # pip show vllm 0.13.0
     pip install vllm
